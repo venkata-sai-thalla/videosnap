@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Power of A & B</title>
+<!DOCTYPE html>
+</head>
+<body>
+
+    <h2>Power of A & B</h2>
+
+    {% if messages %}
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <div>
+            <label>A Value</label><br>
+            <input type="text" name="aValue" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label>B Value</label><br>
+            <input type="text" name="bValue" required>
+        </div>
+
+        <br>
+
+        <button type="submit">submit</button>
+    </form>
+    <p>{{aValue}}**{{bValue}}={{c}}</p>
+    
+    <p>
+        Don't have an account?
+        <a href="{% url 'signup' %}">Signup</a>
+    </p>
+
+</body>
+</html>
