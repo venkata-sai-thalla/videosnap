@@ -1,5 +1,4 @@
 import requests
-from products.chatbot import URL
 from products.models import ChatHistory
 from django.contrib import messages
 from django.shortcuts import render,redirect
