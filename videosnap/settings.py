@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
     'videosnap-cnre.onrender.com',
     'localhost',
     '127.0.0.1',
+    'www.venkatasai.site',
 ]
 
 
