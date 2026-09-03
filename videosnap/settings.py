@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-sp_md0slx^n!#(cyyry1p(%gcars)cd28sgq32x(4kkhc=4$ix
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    '.onrender.com',
+    'videosnap-cnre.onrender.com',
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition
